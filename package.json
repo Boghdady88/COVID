@@ -1,13 +1,18 @@
 {
   "name": "corona-statistics",
   "version": "1.0.0",
+  "engines": {
+    "node": "v13.9.0",
+    "npm": "6.14.1"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --output-path angularapp  --aot --prod"
   },
   "private": true,
   "dependencies": {
@@ -16,6 +21,8 @@
     "@angular/animations": "~9.0.7",
     "@angular/common": "^9.0.7",
     "@angular/compiler": "~9.0.7",
+    "@angular/cli": "^9.0.7",
+    "@angular/compiler-cli": "~9.0.7",
     "@angular/core": "~9.0.7",
     "@angular/forms": "~9.0.7",
     "@angular/platform-browser": "~9.0.7",
@@ -37,8 +44,6 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.7",
-    "@angular/cli": "^9.0.7",
-    "@angular/compiler-cli": "~9.0.7",
     "@angular/language-service": "~9.0.7",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
